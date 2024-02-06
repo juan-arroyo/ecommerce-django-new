@@ -124,7 +124,7 @@
                             </div>
                         </div>
                         <a
-                            href="./cart.html"
+                            href="{% url 'cart' %}"
                             class="widget-header pl-3 ml-3"
                         >
                             <div
@@ -134,7 +134,7 @@
                             </div>
                             <span
                                 class="badge badge-pill badge-danger notify"
-                                >0</span
+                                >{{ cart_count }}</span
                             >
                         </a>
                     </div>
